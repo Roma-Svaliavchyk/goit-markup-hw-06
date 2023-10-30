@@ -19,6 +19,7 @@ body {
   overflow: hidden;
 }
 
+
 p,
 h1,
 h2,
@@ -73,6 +74,8 @@ address {
 }
 
 .header-container {
+  justify-content: space-between;
+
   display: flex;
   align-items: center;
   padding: 17.5px 16px;
@@ -152,6 +155,7 @@ address {
   text-transform: capitalize;
 }
 
+.mob-menu-link:hover,
 .mob-menu-link:focus {
   color: #404bbf;
 }
@@ -160,7 +164,8 @@ address {
   color: #404BBF;
 }
 
-.mob-soc-list {}
+.mob-soc-list {
+}
 
 .mob-soc-item:not(:last-child) {
   margin-bottom: 24px;
@@ -174,6 +179,12 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+
+.mob-soc-link:hover,
+.mob-soc-link:focus{
+  color: #4D5AE5;
 }
 
 .mob-menu-svg-list {
@@ -227,9 +238,12 @@ address {
 }
 
 
-.header-soc-net {}
+.header-soc-net {
+
+}
 
 .header-soc-list {
+  justify-content: end;
   display: none;
 }
 
@@ -551,6 +565,13 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  
+}
+
+@media screen and (min-width: 768px){
+  .footer-text {
+    margin-right: auto;    
+  }
 }
 
 .footer-input-text {
@@ -655,6 +676,7 @@ address {
   width: 165px;
   height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 16px;
 }
 
 
@@ -664,7 +686,7 @@ address {
 }
 
 .ico-futer {
-  margin-left: 16px;
+  
   fill: #fff;
 }
 
@@ -902,6 +924,7 @@ address {
 /*  TABLET  */
 
 @media screen and (min-width: 768px) {
+  
   .container {
     max-width: 768px;
     padding-left: 16px;
@@ -913,6 +936,8 @@ address {
   }
 
   .header-container {
+
+
     display: flex;
     align-items: center;
     padding: 0;
@@ -938,7 +963,9 @@ address {
     flex-direction: column;
     gap: 12px;
   }
-
+  .header-soc-net {
+    margin-left: calc(16%);
+  }
 
   .current {
     position: relative;
@@ -1073,6 +1100,10 @@ address {
   .header-logo {
     margin-right: 76px;
   }
+
+  .header-soc-net {
+    margin-left: calc(28%);
+}
 
   .header-soc-list {
     display: flex;
@@ -1240,6 +1271,7 @@ address {
 
   .footer-text {
     width: 264px;
+    margin-right: auto;
   }
 
   .footer-icon-container {
