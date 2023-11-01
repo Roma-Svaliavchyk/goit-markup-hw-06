@@ -1124,7 +1124,7 @@ address {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-img-2x.jpeg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-img-2x.jpg);
     }
   }
 
